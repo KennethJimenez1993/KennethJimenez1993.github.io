@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: white;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 500px;
+  height: 750px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("http://digitalhint.net/wp-content/uploads/2015/06/resident-evil-operation-raccoon-hd-wallpaper.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("http://www.flickeringmyth.com/wp-content/uploads/2015/01/resident-evil-hd-logo-31.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("https://gaminghistory101.files.wordpress.com/2011/10/re2_box.jpg");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("http://www.gamewallpapers.com/previews_480x300/wallpaper_resident_evil_3_05.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4  {
+  background-image: url("http://vignette2.wikia.nocookie.net/steamtradingcards/images/f/f8/Resident_Evil_4_Biohazard_4_Background_RE4_Cemetery.jpg/revision/latest?cb=20140701062607");
+  background-attachment: fixed;
+}
+
+
+#slide5:before {
+  background-image: url("http://www.relyonhorror.com/wp-content/uploads/2011/12/resident-evil-5.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide6 {
+  background-image: url("http://www.gameforsave.com/wp-content/uploads/2015/09/resident-evil-6-1920.jpg");
+}
